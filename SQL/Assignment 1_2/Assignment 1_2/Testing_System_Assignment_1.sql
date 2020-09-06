@@ -3,25 +3,26 @@ CREATE DATABASE Testing_System;
 USE Testing_System;
 
 CREATE TABLE Department (
-    DepartmentID 			TINYINT UNSIGNED,
-    DepartmentName			VARCHAR(30)
+    DepartmentID 			TINYINT UNSIGNED primary key,
+    DepartmentName			VARCHAR(30) check (length(departmentName)>=6)
 );
 CREATE TABLE Position (
-    PositionID 				TINYINT UNSIGNED,
-    PositionName 			VARCHAR(30)
+    PositionID 				TINYINT UNSIGNED primary key,
+    PositionName 			VARCHAR(30)  check (length(positionName)>=6)
 );
 CREATE TABLE `Account` (
-    AccountID				TINYINT UNSIGNED,
+    AccountID				TINYINT UNSIGNED primary key,
     Email 					VARCHAR(30),
-    Username				VARCHAR(30),
-    Fullname 				VARCHAR(30),
+    Username				VARCHAR(30) check( length(Username) >=7),
+    Fullname 				VARCHAR(30)check(length(Fullname) >=7),
     DepartmentID 			TINYINT UNSIGNED,
-    PositionID 				VARCHAR(30),
-    CreateDate				DATE
+    PositionID 				smallint unsigned,
+    CreateDate				DATE,
+foreign key (DepartmentID) references Department(DepartmentID)
 );
 CREATE TABLE `Group` (
-    GroupID 				TINYINT UNSIGNED,
-    GroupName 				VARCHAR(30),
+    GroupID 				TINYINT UNSIGNED primary key,
+    GroupName 				VARCHAR(30) check (length(GroupName)>=6),
     CreatorID 				TINYINT UNSIGNED,
     CreateDate 				DATE
 );
@@ -32,7 +33,7 @@ CREATE TABLE GroupAccount (
 );
 CREATE TABLE TypeQuestion (
     TypeID 					TINYINT UNSIGNED,
-    TypeName 				VARCHAR(30)
+    TypeName 				VARCHAR(30) check (length(TypeName)>=6)
 );
 CREATE TABLE CategoryQuestion (
     CategoryID 				TINYINT UNSIGNED,
