@@ -170,6 +170,8 @@ BEGIN
 	WHERE department_name = input_department_name;
 END$$
 DELIMITER ;
+
+-- Question 12: Viết store để in ra mỗi tháng có bao nhiêu câu hỏi được tạo trong năm nay
             
             
 -- Question 13: Viết store để in ra mỗi tháng có bao nhiêu câu hỏi được tạo trong 6

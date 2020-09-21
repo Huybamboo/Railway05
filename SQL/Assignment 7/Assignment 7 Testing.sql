@@ -106,42 +106,60 @@ DELIMITER ;
 
 -- Question 7: Cấu hình 1 bài thi chỉ cho phép user tạo tối đa 4 answers cho mỗi question, trong đó có tối đa 2 đáp án đúng.
 
-DROP TRIGGER IF EXISTS exam_max_4_answers;
+DROP TRIGGER IF EXISTS exam_max4;
 DELIMITER $$
-CREATE TRIGGER exam_max_4_answers
-BEFORE
-INSERT ON answer
+CREATE TRIGGER exam_max4
+BEFORE INSERT ON `Answer`
 FOR EACH ROW
-	BEGIN
-		SELECT COUNT(AnswerID) as so_luong_cau
-        FROM answer
-        GROUP BY QuestionID
-        HAVING QuestionID = NEW.QuestionID;
-        SELECT COUNT(AnswerID) as so_cau_dung
-        FROM `answer` 
-        GROUP BY QuestionID
-        HAVING QuestionID = NEW.QuestionID AND isCorrect = '1';
-        IF so_luong_cau > 4 and so_cau_dung >2 THEN SIGNAL SQLSTATE '12345'
-													SET MESSAGE_TEXT = 'cannot create';
-        END IF;
-	END$$
-    DELIMITER ;
+BEGIN
+
+DECLARE No_of_answers TINYINT UNSIGNED;
+DECLARE No_of_correct_answers TINYINT UNSIGNED;
+
+SELECT 	COUNT(QuestionID) INTO No_of_answers
+FROM 	Answer
+WHERE  	QuestionID = NEW.QuestionID;
+
+SELECT 	COUNT(QuestionID) INTO No_of_correct_answers
+FROM 	Answer
+WHERE  	QuestionID = NEW.QuestionID AND isCorrect = 'đúng';
+
+IF  No_of_answers >= 4 OR No_of_correct_answers >= 2 THEN
+	SIGNAL SQLSTATE '12345'
+	SET MESSAGE_TEXT = 'Can not add more answers';
+END IF;
+END $$
+DELIMITER ;
+
+INSERT INTO `Answer` (	Content    , QuestionID	,	isCorrect)
+VALUES				 ( 	'Trả lời 03',	'2',		1);
+
+
     
 -- Question 8: Viết trigger sửa lại dữ liệu cho đúng:
 		--  Nếu người dùng nhập vào gender của account là nam, nữ, chưa xác định
 		--  Thì sẽ đổi lại thành M, F, U cho giống với cấu hình ở database
-DROP TRIGGER IF EXISTS gender_of_account;
+DROP TRIGGER IF EXISTS update_gender;
 DELIMITER $$
-CREATE TRIGGER gender_of_account
+CREATE TRIGGER update_gender
 BEFORE INSERT ON `account`
 FOR EACH ROW
-BEGIN 
-	IF NEW.gender = 'nam' then SET gender = 'M';
-	ELSEIF NEW.gender = 'nu' then SET gender = 'F';
-    ELSEIF NEW.gender = 'chưa xác định' then SET gender= 'U';
-	END IF ;
-END$$
+BEGIN
+	DECLARE input_gender VARCHAR(50);
+	SELECT NEW.Gender INTO input_gender;
+IF 	NEW.Gender = 'Nam' THEN 
+	SET NEW.Gender = 'M';
+	END IF;
+IF NEW.Gender = 'Nữ' THEN 
+	SET NEW.Gender = 'F';
+	END IF;
+IF 	NEW.Gender = 'chưa xác định' THEN 
+	SET NEW.Gender = 'U';
+END IF;
+
+END $$
 DELIMITER ;
+
 
 -- Question 9: Viết trigger không cho phép người dùng xóa bài thi mới tạo được 2 ngày
 DROP TRIGGER IF EXISTS cannot_delete_exam;
@@ -150,7 +168,9 @@ CREATE TRIGGER cannot_delete_exam
 BEFORE DELETE ON exam
 FOR EACH ROW
 BEGIN
-	IF OLD.CreateDate =DATE_SUB(NOW(), INTERVAL 2 DAY) THEN
+	DECLARE create_date DATE;
+    SELECT OLD.CreateDate INTO create_date ;
+    IF create_date > (SELECT DATE_ADD(NOW(), INTERVAL -2 DAY))THEN
     SIGNAL SQLSTATE '12345'
 	SET MESSAGE_TEXT = 'cannot delete exam';
     END IF ;
