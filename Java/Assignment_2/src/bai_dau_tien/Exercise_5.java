@@ -1,8 +1,6 @@
 package bai_dau_tien;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Date;
+
 import java.util.Scanner;
 
 public class Exercise_5 {
@@ -33,7 +31,7 @@ public class Exercise_5 {
 		for (int i = 0; i < 2; i++) {
 			System.out.println("nhập số thứ " + (i +1) + ":");
 			a[i]= sothuc.nextFloat();
-			
+sothuc.close();			
 		}
 		
 		System.out.println("-----------------------------");
@@ -73,8 +71,9 @@ public class Exercise_5 {
 		} else {
 			System.out.println("Bạn nhập sai, hãy nhập lại");
 		}
-		
+scanner.close();
 } 
+	
 	// 
 	
 	
@@ -82,6 +81,6 @@ public class Exercise_5 {
 	public static void taodepartment() {
 	Scanner scanner = new Scanner(System.in);
 	System.out.println("Moi ban nhap ten department muon tao");
-	String department = scanner.nextLine();
+scanner.close();
 }
 }

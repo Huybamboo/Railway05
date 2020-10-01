@@ -1,8 +1,7 @@
 package bai_dau_tien;
 
-import java.text.DateFormat;
+
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
@@ -63,7 +62,7 @@ public class Exercise_2 {
 		System.out.printf("%-20d %-30s %-40s \n"  ,  3  , "Duong"   , "Duong@gmiail.com");
 		
 		
-		
+		scanner.close();
 		
 
 		

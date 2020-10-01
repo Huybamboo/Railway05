@@ -117,7 +117,7 @@ public class Exercise_1 {
 		String input_user = scanner.next();
 		String Name = ((String) input_user.subSequence(0, 1)).toUpperCase() + input_user.substring(1);
 		System.out.println(Name);
-		
+scanner.close();		
 		
 		//Question 4: Viết chương trình để người dùng nhập vào tên in từng ký tự trong tên của người dùng ra
 					// VD: Người dùng nhập vào "Nam", hệ thống sẽ in ra
@@ -134,7 +134,7 @@ public class Exercise_1 {
 		System.out.println("Mời nhập tên : ");
 		String ten = scanner_5.next();
 		System.out.println("Họ và tên đầy đủ của bạn là : " + ho + " " + ten);
-		
+scanner_5.close();		
 		
 		// Question 6:Viết chương trình yêu cầu người dùng nhập vào họ và tên đầy đủ và sau đó hệ thống sẽ tách ra họ, tên , tên đệm
 					//VD:
