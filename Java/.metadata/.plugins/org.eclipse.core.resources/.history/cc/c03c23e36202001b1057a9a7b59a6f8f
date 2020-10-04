@@ -1,0 +1,43 @@
+package Assign_3;
+
+public class Exercise_1 {
+	public static void main(String[] args) {
+		
+		
+		// Exercise 1 (Optional): Datatype Casting
+//		Question 1:
+//			Khai báo 2 số lương có kiểu dữ liệu là float.
+//			Khởi tạo Lương của Account 1 là 5240.5 $
+//			Khởi tạo Lương của Account 2 là 10970.055$
+//			Khai báo 1 số int để làm tròn Lương của Account 1 và in số int đó ra
+//			Khai báo 1 số int để làm tròn Lương của Account 2 và in số int đó ra
+		
+//		float luong1=  5240.5f;
+//		float luong2=  10970.055f;
+//		int account1 = (int) luong1;
+//		int account2 = (int) luong2;
+//		System.out.println(account1);
+//		System.out.println(account2);
+		
+		// Exercise 2 (Optional): Default value
+//		Question 1:
+//			Không sử dụng data đã insert từ bài trước, tạo 1 array Account và khởi
+//			tạo 5 phần tử theo cú pháp (sử dụng vòng for để khởi tạo):
+//			 Email: "Email 1"
+//			 Username: "User name 1"
+//			 FullName: "Full name 1"
+//			 CreateDate: now
+		Account[] bangmoi = new Account[5];
+		for (int i = 0; i < bangmoi.length; i++) {
+			bangmoi[i] = new Account();
+			bangmoi[i].email = "Email" + (i+1);
+			bangmoi[i].userName = "User name" + (i + 1);
+			bangmoi[i].fullName = "Full name" + (i + 1);
+			System.out.println(bangmoi[i].email);
+			
+		}
+		
+		
+}
+
+}

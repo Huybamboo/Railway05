@@ -1,0 +1,7 @@
+package Assign_3;
+
+public class Department {
+	byte id;
+	String name;
+  // mot dep co 1 danh sach account
+};

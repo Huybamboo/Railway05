@@ -1,0 +1,29 @@
+package com.vti.entity;
+
+import java.time.LocalDate;
+
+public class Group {
+	private Account creator;
+	private int id;
+	private String name;
+	private LocalDate createDate;
+	private Account[] accounts;
+	
+	// a) không có parameters
+	public Group() {
+	}
+	
+	// b) Có các parameter là GroupName, Creator, array Account[] accounts, CreateDate
+	public Group(int id, String name, Account creator, Account[] accounts, LocalDate createDate) {
+		this.id = id;
+		this.name = name;
+		this.creator = creator;
+		this.accounts = accounts;
+		this.createDate = createDate;
+	}
+	
+	// c) Có các parameter là GroupName, Creator, array String[] usernames , CreateDate
+		// Với mỗi username thì sẽ khởi tạo 1 Account (chỉ có thông tin
+													// username, các thông tin còn lại = null).
+	
+}

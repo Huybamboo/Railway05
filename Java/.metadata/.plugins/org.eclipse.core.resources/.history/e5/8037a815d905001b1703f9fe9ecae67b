@@ -1,0 +1,18 @@
+package com.vti.entity;
+
+import java.time.LocalDate;
+
+public class Group {
+	private Account creator;
+	private int id;
+	private String name;
+	private LocalDate createDate;
+	private Account[] accounts;
+	
+	public Group() {
+	}
+	
+	
+	
+	
+}
