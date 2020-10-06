@@ -1,0 +1,5 @@
+package com.vti.exercise_4;
+
+public interface LamViec {
+
+}

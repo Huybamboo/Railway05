@@ -13,6 +13,10 @@ public class Account {
 	private Gender_account gender;
 	private GroupAccount[] groups;
 	
+	public Account(String userName) {
+		this.userName = userName;
+		
+	}
 	public Account() {      // a) k co parameter
 	}
 	// b) Có các parameter là id, Email, Username, FirstName,LastName (với FullName = FirstName + LastName)

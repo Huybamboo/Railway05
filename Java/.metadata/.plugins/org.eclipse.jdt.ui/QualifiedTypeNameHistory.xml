@@ -6,11 +6,23 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.text.DateFormat"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.vti.entity.Account"/>
+    <fullyQualifiedTypeName name="com.vti.exercise_4.Enuum_canbo"/>
+    <fullyQualifiedTypeName name="com.vti.exercise_4.Enum_canbo"/>
+    <fullyQualifiedTypeName name="com.vti.exercise_4.test_E4"/>
+    <fullyQualifiedTypeName name="Exercise_2.IStudent"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StackFrameInfo"/>
+    <fullyQualifiedTypeName name="entity.Student"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.utils.StringToStringTableVector"/>
+    <fullyQualifiedTypeName name="jdk.vm.ci.meta.JavaKind.FormatWithToString"/>
+    <fullyQualifiedTypeName name="entity.Quan_ly_hs_thi_DH"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="entity.TuyenSinh"/>
+    <fullyQualifiedTypeName name="entity.Muc_uu_tien"/>
+    <fullyQualifiedTypeName name="entity.Gioi_tinh"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>

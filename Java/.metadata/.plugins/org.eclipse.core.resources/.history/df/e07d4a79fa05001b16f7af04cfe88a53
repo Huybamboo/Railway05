@@ -1,0 +1,19 @@
+package com.vti.exercise_4;
+
+public class CanBo {
+// Họ tên, tuổi, giới tính(name, nữ,khác), địa chỉ.
+	String name;
+	int tuoi;
+	Enuum_canbo gioitinh;
+	String address;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

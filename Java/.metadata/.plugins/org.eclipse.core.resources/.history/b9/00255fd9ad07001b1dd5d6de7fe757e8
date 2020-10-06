@@ -1,0 +1,15 @@
+package entity;
+
+public class News {
+	// Tạo một class News bao gồm thuộc tính:
+//	ID (int), Title (String), PublishDate (String), Author (String),
+//	Content (String) và AverageRate (float). 
+	int ID;
+	String Title;
+	String PublishDate;
+	String Author;
+	String Content;
+	float AverageRate;
+	
+
+}

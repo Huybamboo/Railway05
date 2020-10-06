@@ -1,0 +1,6 @@
+package com.vti.exercise_4;
+
+public enum Enuum_canbo {
+	nam, nu , khac;
+
+}

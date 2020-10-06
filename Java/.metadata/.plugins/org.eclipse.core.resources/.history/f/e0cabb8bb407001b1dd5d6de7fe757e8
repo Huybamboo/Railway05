@@ -1,0 +1,9 @@
+package entity;
+
+public class Quan_ly_hs_thi_DH {
+	int SDB;
+	String name;
+	String address;
+	Muc_uu_tien uuTien;
+
+}

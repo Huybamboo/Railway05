@@ -25,16 +25,17 @@ public class Group {
 	// c) Có các parameter là GroupName, Creator, array String[] usernames , CreateDate
 		// Với mỗi username thì sẽ khởi tạo 1 Account (chỉ có thông tin
 													// username, các thông tin còn lại = null).
-	public Group(String name, Account creator, Account[] accounts, LocalDate createDate ) {
+	public Group(String name, Account creator, String[] userNames, LocalDate createDate ) {
 		this.name = name;
 		this.creator =creator;
 		this.createDate = createDate;
 		
-//		Account[] bangaccount = new Account[accounts.length];
-//		for (int i = 0; i < bangaccount.length; i++) {
-//			accounts[i] = new Account(usernames[i])
-			
+		Account[] bangaccount = new Account[userNames.length];
+		for (int i = 0; i < userNames.length; i++) {
+			bangaccount[i] = new Account(userNames[i]);
 		}
+		}
+	
 	public int getId() {
 		return id;
 	}

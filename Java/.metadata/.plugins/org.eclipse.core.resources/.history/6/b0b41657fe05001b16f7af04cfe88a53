@@ -1,0 +1,46 @@
+package com.vti.exercise_4;
+
+public class CanBo {
+// Họ tên, tuổi, giới tính(name, nữ,khác), địa chỉ.
+	protected String name;
+	protected int tuoi;
+	protected Enuum_canbo gioiTinh;
+	protected String address;
+	
+	public CanBo (String name,  int tuoi, Enuum_canbo gioitinh, String address) {
+		this.name = name;
+		this.tuoi = tuoi;
+		this.gioiTinh = gioitinh;
+		this.address = address;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getTuoi() {
+		return tuoi;
+	}
+	public void setTuoi(int tuoi) {
+		this.tuoi = tuoi;
+	}
+	public Enuum_canbo getGioiTinh() {
+		return gioiTinh;
+	}
+	public void setgioiTinh(Enuum_canbo gioiTinh) {
+		this.gioiTinh = gioiTinh;
+	}
+	public String getaddress() {
+		return address;
+	}
+	public void setaddress(String address) {
+		this.address = address;
+	}
+	
+	
+	
+	
+	
+}

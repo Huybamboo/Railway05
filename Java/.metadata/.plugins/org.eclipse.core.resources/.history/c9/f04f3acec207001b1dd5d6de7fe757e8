@@ -1,0 +1,7 @@
+package com.vti.exercise_4;
+
+public class Contact {
+	long number;
+	String name;
+
+}
