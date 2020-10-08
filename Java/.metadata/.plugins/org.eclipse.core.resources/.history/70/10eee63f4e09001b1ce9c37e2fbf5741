@@ -1,0 +1,6 @@
+package com.vti.backend;
+
+public class Exercise_5 {
+	public void Question_2();
+
+}

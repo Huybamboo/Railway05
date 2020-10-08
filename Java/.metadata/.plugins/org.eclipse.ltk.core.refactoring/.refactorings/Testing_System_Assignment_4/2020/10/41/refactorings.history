@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;QLCB.java&apos; to &apos;Assignment_4/src/com.vti.exercise_5&apos;&#x0D;&#x0A;- Original project: &apos;Testing_System_Assignment_4&apos;&#x0D;&#x0A;- Destination element: &apos;Assignment_4/src/com.vti.exercise_5&apos;&#x0D;&#x0A;- Original element: &apos;entity.QLCB.java&apos;" description="Copy compilation unit" destination="=Assignment_4/src&lt;com.vti.exercise_5" element1="/src&lt;entity{QLCB.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1602150662925" units="1" version="1.0"/>
+</session>

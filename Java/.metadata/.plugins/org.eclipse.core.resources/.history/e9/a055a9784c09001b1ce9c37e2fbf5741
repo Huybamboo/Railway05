@@ -1,0 +1,5 @@
+package com.vti.exercise_5;
+
+public interface phuongthuacQLCB {
+
+}

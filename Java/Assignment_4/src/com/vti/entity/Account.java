@@ -29,12 +29,12 @@ public class Account {
 	// c) Có các parameter là id, Email, Username, FirstName,
 			//	LastName (với FullName = FirstName + LastName) và
 			//	Position của User, default createDate = now
-	public Account(int accountID, String email, String userName, String lastname, String fisrtname, Position position) {
+	public Account(int accountID, String email, String userName, String lastname, String fisrtname, Position enum_position) {
 		this.accountID = accountID;
 		this.email = email;
 		this.userName = userName;
 		this.fullName = fisrtname + " " + lastname;
-		this.position = position;
+		this.position = enum_position;
 		this.createDate = LocalDate.now();		
 	}
 	

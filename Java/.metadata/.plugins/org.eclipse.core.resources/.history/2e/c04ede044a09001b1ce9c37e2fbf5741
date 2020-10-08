@@ -1,0 +1,62 @@
+package com.vti.Exercise_4;
+
+public class Student {
+	private int id;
+	private String name;
+	private String hometown;
+	private int diemhl;
+	
+	public Student(String name, String hometown) {
+		this.name = name;
+		this.hometown = hometown;
+		this.diemhl = 0;
+	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getHometown() {
+		return hometown;
+	}
+	public void setHometown(String hometown) {
+		this.hometown = hometown;
+	}
+	public int getDiemhl() {
+		return diemhl;
+	}
+	// c) Tạo 1 method cho phép set điểm vào
+	public void setDiemhl(int diemhl) {
+		this.diemhl = diemhl;
+	}
+
+	// d) Tạo 1 method cho phép cộng thêm điểm
+	public void plusDiemhl(int diemhl) {
+		this.diemhl += diemhl;
+	}
+	public String toString() {
+		String danhgia;
+		if (diemhl < 4.0) {
+			danhgia = "Yếu";
+		} else if (diemhl < 6) {
+			danhgia = "Trung bình";
+		} else if (diemhl < 8) {
+			danhgia = "Khá";
+		} else {
+			danhgia = "Giỏi";
+		}
+
+		return "Student{" + "id=" + id + ", name='" + name + '\'' + ", hometown='" + hometown + '\'' + ", diem hoc luc="
+				+ diemhl + ", Danh gia='" + danhgia + '\'' + '}';
+	}
+	
+}

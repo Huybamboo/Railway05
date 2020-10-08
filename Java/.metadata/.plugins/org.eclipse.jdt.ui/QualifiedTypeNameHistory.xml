@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="com.vti.entity.Account"/>
     <fullyQualifiedTypeName name="com.vti.exercise_4.Enuum_canbo"/>
     <fullyQualifiedTypeName name="com.vti.exercise_4.Enum_canbo"/>
     <fullyQualifiedTypeName name="com.vti.exercise_4.test_E4"/>
@@ -20,9 +19,20 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.utils.StringToStringTableVector"/>
     <fullyQualifiedTypeName name="jdk.vm.ci.meta.JavaKind.FormatWithToString"/>
     <fullyQualifiedTypeName name="entity.Quan_ly_hs_thi_DH"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="entity.TuyenSinh"/>
     <fullyQualifiedTypeName name="entity.Muc_uu_tien"/>
     <fullyQualifiedTypeName name="entity.Gioi_tinh"/>
+    <fullyQualifiedTypeName name="com.vti.backend.Excercise_1"/>
+    <fullyQualifiedTypeName name="com.vti.entity.enum_position"/>
+    <fullyQualifiedTypeName name="com.vti.entity.Account"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="com.vti.entity.Group"/>
+    <fullyQualifiedTypeName name="com.vti.entity.Department"/>
+    <fullyQualifiedTypeName name="com.vti.Exercise_4.Student"/>
+    <fullyQualifiedTypeName name="com.vti.backend.Excercise_4"/>
+    <fullyQualifiedTypeName name="com.vti.exercise_5.NhanVien"/>
+    <fullyQualifiedTypeName name="com.vti.exercise_5.KySu"/>
+    <fullyQualifiedTypeName name="com.vti.exercise_5.QLCB"/>
+    <fullyQualifiedTypeName name="com.vti.backend.Exercise_5"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
