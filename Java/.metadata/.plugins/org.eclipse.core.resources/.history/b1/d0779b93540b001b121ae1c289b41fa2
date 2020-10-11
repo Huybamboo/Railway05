@@ -1,0 +1,11 @@
+package Exercise_2.backend;
+
+public class Question_4 {
+	// Question 4:
+		//	Tạo 1 array departments gồm 3 phần tử
+		//	Sau đó viết 1 method getIndex(int index) để lấy thông tin phần tử thứ
+		//	index trong array departments. Nếu index vượt quá length lấy ra thì sẽ
+		//	in ra text "Cannot find department."
+		String[] departments = {"department_1" , "department_2", "department_3"};
+
+}

@@ -1,0 +1,21 @@
+package Demo;
+
+import java.util.Scanner;
+
+public class Program {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Mời bạn nhập vào tuổi: ");
+		
+		try {
+			int age = scanner.nextInt();
+			System.out.println("tuổi là: " + age);
+		} catch (Exception e) {
+			System.out.println("mày nhập sai rồi, nhập lại đi");
+		}
+		
+		System.out.println("Chương trình đã xong");
+		
+	}
+
+}
