@@ -2,7 +2,7 @@ package entity;
 
 public class MyMath {
 	public static void main(String[] args) {
-	//	float PI = 3.15f; // giá trị PI = 3.14 không thay đổi đc
+		float PI = 3.15f; // giá trị PI = 3.14 không thay đổi đc
 		sum(3);
 		
 	}
@@ -15,8 +15,5 @@ public class MyMath {
 			float c = (float)a + PI;
 			System.out.println(c);
 		}
-		// Question 2 : Tạo class Student có property id, name hãy thiết kế class Student sao
-//		cho khi đã khởi tạo Student thì id là không thể thay đổi trong suốt quá
-//		trình chạy chương trình chương trình
 
 }

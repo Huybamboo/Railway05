@@ -5,13 +5,11 @@ public class Student_Exercise_2 {
 	private final int id;
 	private String name;
 	
-	public Student_Exercise_2() {
-		this.id = 0;
-	}
-	public Student_Exercise_2(String name) {
+	
+	public Student_Exercise_2(final int id , String name) {
 		this.name = name;
-		this.id = 0;
-	}
+		this.id = id;
+	}	
 	public String getName() {
 		return name;
 	}

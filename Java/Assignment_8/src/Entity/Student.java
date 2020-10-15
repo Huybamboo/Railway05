@@ -2,12 +2,12 @@ package Entity;
 
 public class Student {
 	private static int counter =0;
-	private static int id = 0;
+	private int id;
 	private String name;
 	
-	public Student(String name) {
+	public Student(int id , String name) {
 		counter ++;
-		id ++;
+		this.id = id;
 		this.name = name;
 		}
 
@@ -24,18 +24,18 @@ public class Student {
 		return counter;
 	}
 
-
-	
-
-	public static int getId() {
+	public int getId() {
 		return id;
 	}
 
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	@Override
 	public String toString() {
 		String result = "";
-		result += "ID của học sinh là: " + id + " Tên của học sinh là: " + name;
+		result += "ID là: " + id + " Tên học sinh là: " + name + "\n";
 		return result;
 	}
 
