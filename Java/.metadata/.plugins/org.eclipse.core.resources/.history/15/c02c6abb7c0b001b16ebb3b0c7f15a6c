@@ -1,0 +1,30 @@
+package backend;
+
+import entity.Student;
+
+public class Exercise1 {
+	public static void Question1_1() {
+		Student student1 = new Student(1 , "Nguyễn Văn A");
+		Student student2 = new Student(2 , "Nguyễn Văn B");
+		Student student3 = new Student(3 , "Nguyễn Văn C");
+		
+		Student.setcollege("Đại học bách khoa");
+		
+		Student[] students = {student1 , student2, student3};
+		for (int i = 0; i < students.length; i++) {
+	 		System.out.println(students[i]);
+			
+		}
+	}
+	public static void Question1_2() {
+		Student student1 = new Student(1 , "Nguyễn Văn A");
+		Student student2 = new Student(2 , "Nguyễn Văn B");
+		Student student3 = new Student(3 , "Nguyễn Văn C");
+		
+		Student[] students = {student1 , student2, student3};
+		Student.setcollege("Đại học công nghệ");
+		for (int i = 0; i < students.length; i++) {
+	 		System.out.println(students[i]);
+	}
+	}
+}

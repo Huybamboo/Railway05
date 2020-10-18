@@ -34,6 +34,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Admin\Desktop\Huy\Java\Answers\TestingSystem_Assignment_7"/>
+			<item value="C:\Users\Admin\Desktop\Huy\Java\java tren lop\Lesson_06"/>
 			<item value="C:\Users\Admin\Desktop\Huy\Java\Answers\TestingSystem_Assignment_6"/>
 			<item value="C:\Users\Admin\Desktop\Huy\Java\java tren lop\DebugExercise"/>
 			<item value="C:\Users\Admin\Desktop\Huy\Java\java tren lop\Testing_System_Assignment_4_Debug"/>
@@ -42,5 +44,12 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="380"/>
+		<item key="DIALOG_Y_ORIGIN" value="185"/>
 	</section>
 </section>

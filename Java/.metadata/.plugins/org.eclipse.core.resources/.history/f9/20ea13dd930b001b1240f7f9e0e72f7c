@@ -1,0 +1,15 @@
+package entity;
+
+public class MyMath {
+	public static void main(String[] args) {
+		float PI = 3.15f;
+		sum(3);
+		
+	}
+		
+		public static void sum(int a) {
+			final float PI = 3.14f;
+			float c = (float)a + PI;
+			System.out.println(c);
+		}
+}

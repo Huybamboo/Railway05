@@ -1,0 +1,7 @@
+package Entity;
+
+public class Student_Exercise_3 <T> {
+	T id;
+	String name;
+	
+}

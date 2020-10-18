@@ -1,0 +1,15 @@
+package Backend;
+
+import java.util.Date;
+
+public class Exercise_2 {
+	
+	// Question 1
+	
+	public static void main(String[] args) {
+		@SuppressWarnings("deprecation")
+		Date date = new Date(120, 15, 10);
+		System.out.println(date);
+	}
+
+}

@@ -1,0 +1,15 @@
+package Frontend;
+
+import Entity.ArrayListStudent;
+
+public class Program_1 {
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	public static void Question_1() {
+		ArrayListStudent exercise_1 = new ArrayListStudent();
+		exercise_1.A();
+	}
+}

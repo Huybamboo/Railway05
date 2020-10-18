@@ -1,0 +1,49 @@
+package Entity;
+
+import java.util.ArrayList;
+
+public class ArrayListStudent {
+	private ArrayList<Student> students;
+	
+	public ArrayListStudent() {
+		students = new ArrayList<>();
+		inputStudent();
+	}
+	
+	private void inputStudent() {
+		students.add(new Student(1, "Long"	));
+		students.add(new Student(2, "Dương"	));
+		students.add(new Student(3, "Tú"	));
+		students.add(new Student(4, "Long"	));
+		students.add(new Student(5, "Long"	));
+	}
+	
+	public void printfStudent() {
+		for (Student student : students) {
+			System.out.println(student);	
+		}
+	}
+	
+	public void cauA() {
+		System.out.println(Student.getCounter());
+	}
+	
+	public void cauB() {
+		System.out.println(students.get(3));
+	}
+	
+	public void cauC() {
+		System.out.println("Phần tử đầu tiên là: " + students.get(0));
+		System.out.println("Phần tử cuối cùng là: " + students.get(students.size() - 1));
+	}
+	
+	public void cauDFisrtAndLast() {
+		students.add(0, new Student(0, "Thắm"));
+		students.add(students.size(), new Student(11 , "Vũ"));
+		
+		System.out.println("Phần tử đầu tiên là: " + students.get(0));
+		System.out.println("Phần tử cuối cùng là: " + students.get(students.size() - 1));
+		
+	}
+
+}

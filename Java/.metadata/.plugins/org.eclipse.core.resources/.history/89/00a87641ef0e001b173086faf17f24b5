@@ -1,0 +1,40 @@
+package Backend.Exercise_3;
+
+public class CPU {
+	int price;
+	
+	public CPU(int price) {
+		this.price = price;
+	}
+	
+	public class Processor {
+		float coreAmount;
+		String menufacturer;
+		
+		public Processor(float coreAmount, String menufacturer) {
+			this.coreAmount= coreAmount;
+			this.menufacturer = menufacturer;
+		}
+	
+		
+
+	public void getCache(float a) {
+		return;
+	}
+	}
+	
+	public class Ram {
+		int memory;
+		Processor menufacturer;
+		
+		public Ram (int memory, Processor menufacturer) {
+			this.memory = memory;
+			this.menufacturer = menufacturer;
+		}
+		
+	public void getClockSpeed(float b) {
+		return;
+		
+	}
+	}
+}

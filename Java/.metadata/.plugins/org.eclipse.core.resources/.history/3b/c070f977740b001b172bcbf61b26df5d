@@ -1,0 +1,10 @@
+package demo;
+
+public class demo {
+	public static void main(String[] args) {
+		Account account1 = new Account(1, "A");
+		Account account2 = new Account(1, "B");
+		
+	}
+
+}

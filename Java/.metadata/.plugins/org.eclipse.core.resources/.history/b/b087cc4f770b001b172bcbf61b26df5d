@@ -1,0 +1,33 @@
+package entity;
+
+public class Student {
+	// Question 1: static variable
+		//	Khai báo 1 class student có các thuộc tính id, name, college
+		//	Với college là static variable.
+	private int id;
+	private String name;
+	static String college;
+	
+	public Student() {
+		
+	}
+	
+	public Student(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+
+}
