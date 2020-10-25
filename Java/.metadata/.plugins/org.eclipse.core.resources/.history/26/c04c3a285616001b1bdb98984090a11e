@@ -1,0 +1,67 @@
+package com.vti.Assignment_11.Frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vti.backend.controller.GroupController;
+import com.vti.backend.entity.Group;
+import com.vti.utils.ScannerUntils;
+
+public class Program {
+
+	private static ScannerUntils scanner = new ScannerUntils();
+
+	@SuppressWarnings("static-access")
+	public static void main(String[] args)
+			throws FileNotFoundException, ClassNotFoundException, IOException, SQLException {
+
+		System.out.print("Mời bạn chọn chức năng: \n");
+		System.out.println("(1: Get List Groups | 2: Create Group | 3: Delete Group | 5: Exit)");
+
+		while (true) {
+			System.out.print("Mời bạn nhập chức năng: ");
+			int choose = scanner.inputInt("Bạn phải nhập số từ 1 --> 3: ");
+			switch (choose) {
+			case 1:
+				getListGroups();
+				break;
+
+			case 2:
+				createGroup();
+				break;
+
+			case 5:
+				return;
+			}
+		}
+	}
+
+	@SuppressWarnings("static-access")
+	private static void createGroup() {
+		GroupController controller = new GroupController();
+
+		while (true) {
+			System.out.print("Mời bạn nhập vào tên group: ");
+			String name = scanner.inputString("Tên group phải từ 6 --> 8 ký tự");
+
+			if (!controller.isGroupNameExists(name)) {
+				controller.createGroup(name);
+				System.out.println("Tạo thành công");
+				return;
+			} else {
+				System.out.println("Tên đã tồn tại. Hãy nhập lại!");
+			}
+		}
+	}
+
+	private static void getListGroups()
+			throws FileNotFoundException, ClassNotFoundException, IOException, SQLException {
+		GroupController controller = new GroupController();
+		List<Group> groups = controller.getListGroup();
+		for (Group group : groups) {
+			System.out.println(group);
+		}
+	}
+}

@@ -1,9 +1,0 @@
-package entity;
-
-public class Khoi_A {
-	int SDB;
-	String name;
-	String address;
-	Muc_uu_tien uuTien;
-
-}

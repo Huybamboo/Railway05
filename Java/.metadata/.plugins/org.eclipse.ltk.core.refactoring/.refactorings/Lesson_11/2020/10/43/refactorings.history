@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;JdbcUtils.java&apos; to &apos;Assignment_11/src/main/java/com.vti.Assignment_11.Utils&apos;&#x0D;&#x0A;- Original project: &apos;Lesson_11&apos;&#x0D;&#x0A;- Destination element: &apos;Assignment_11/src/main/java/com.vti.Assignment_11.Utils&apos;&#x0D;&#x0A;- Original element: &apos;com.vti.utils.JdbcUtils.java&apos;" description="Copy compilation unit" destination="=Assignment_11/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vti.Assignment_11.Utils" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vti.utils{JdbcUtils.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1603583996389" units="1" version="1.0"/>
+</session>

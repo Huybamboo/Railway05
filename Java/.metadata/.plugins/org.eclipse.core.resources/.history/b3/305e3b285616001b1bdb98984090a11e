@@ -1,0 +1,39 @@
+package com.vti.Assignment_11.Backend.Service;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vti.backend.entity.Group;
+import com.vti.backend.repository.GroupRepository;
+import com.vti.backend.repository.IGroupRepository;
+
+public class GroupService implements IGroupService {
+
+	private IGroupRepository groupRepository;
+
+	public GroupService() {
+		groupRepository = new GroupRepository();
+	}
+
+	@Override
+	public List<Group> getListGroup() throws FileNotFoundException, ClassNotFoundException, IOException, SQLException {
+		return groupRepository.getGroups();
+	}
+
+	@Override
+	public void createGroup(String name) {
+		groupRepository.createGroup(name);
+	}
+
+	@Override
+	public void deleteGroup(int id) {
+		groupRepository.deleteGroup(id);
+	}
+
+	@Override
+	public boolean isGroupNameExists(String name) {
+		return groupRepository.isGroupNameExists(name);
+	}
+}

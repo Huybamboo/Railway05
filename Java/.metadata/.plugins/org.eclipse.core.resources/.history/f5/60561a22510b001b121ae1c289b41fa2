@@ -1,7 +1,0 @@
-package Exercise_2.backend;
-
-public class Question_1 {
-	// Question 1: try…catch…finally
-			 // Hãy xử lý exception cho VD trên, khi bị lỗi thì sẽ in ra text "cannot divide 0"
-
-}

@@ -1,7 +1,0 @@
-package Entity;
-
-public class StudentExercise3 <T> {
-	T id;
-	String name;
-	
-}

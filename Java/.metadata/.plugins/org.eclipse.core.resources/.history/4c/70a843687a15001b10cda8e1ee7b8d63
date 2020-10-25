@@ -1,0 +1,15 @@
+package Frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import Backend.Transaction;
+
+public class Program4 {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException, FileNotFoundException, IOException {
+		Transaction transaction = new Transaction();
+		transaction.deleteEmployees(1);
+	}
+
+}

@@ -1,0 +1,18 @@
+package Frontend;
+
+import java.sql.SQLException;
+
+import Backend.Exercise_1;
+
+public class Program {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Exercise_1 exercise_1 = new Exercise_1();
+		System.out.println("Question_1 ");
+		exercise_1.Question_1();
+		System.out.println("--------------- Connect success! ----------------");
+		
+		exercise_1.Question_2();
+		
+	}
+
+}

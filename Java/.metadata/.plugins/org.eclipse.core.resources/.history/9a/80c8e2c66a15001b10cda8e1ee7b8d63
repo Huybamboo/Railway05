@@ -1,0 +1,75 @@
+package Backend;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class DepartmentDao {
+		public void getDepartments() throws ClassNotFoundException, SQLException {
+			String url = "jdbc:mysql://localhost:3306/testing_system?autoReconnect=true&useSSL=false&characterEncoding=latin1";
+			String userName = "root" ;
+			String password = "root" ;
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			Connection connection = DriverManager.getConnection(url, userName, password );
+			
+			Statement statement = connection.createStatement();
+			String sql = "SELECT * FROM department";
+			ResultSet resultSet = statement.executeQuery(sql);
+			
+			try {
+				while (resultSet.next()) {
+					int DepartmentID = resultSet.getInt("DepartmentId");
+					String DepartmentName = resultSet.getString("DepartmentName");
+					
+					System.out.println("DepartmentId: " + DepartmentID);
+					System.out.println("DepartmentName: " +  DepartmentName);
+				}
+				
+			} catch (Exception e) {
+				System.out.println("Đã xảy ra lỗi!!!");
+			}finally {
+				 connection.close();
+		}		
+	}
+		public void getDepartmentById() throws ClassNotFoundException, SQLException {
+			String url = "jdbc:mysql://localhost:3306/testing_system?autoReconnect=true&useSSL=false&characterEncoding=latin1";
+			String userName = "root" ;
+			String password = "root" ;
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			Connection connection = DriverManager.getConnection(url, userName, password );
+			
+			Statement statement = connection.createStatement();
+			String sql = "SELECT * FROM department";
+			ResultSet resultSet = statement.executeQuery(sql);
+			while (resultSet.next()) {
+				int DepartmentID = resultSet.getInt("DepartmentId");
+				String DepartmentName = resultSet.getString("DepartmentName");
+				
+				System.out.println("DepartmentId: " + DepartmentID);
+				System.out.println("DepartmentName: " +  DepartmentName);
+			Scanner scanner = new Scanner(System.in);
+			try {
+				System.out.println("Mời nhập Id cần tìm: ");
+				int findId = scanner.nextInt();
+				if (findId != DepartmentID) {
+					System.out.println("Cannot find department which has id = " + findId);
+					
+				}
+			
+				
+			} catch (Exception e) {
+				System.out.println("Đã xảy ra lỗi!!!");
+			}finally {
+			connection.close();
+			}
+			
+		}
+	}
+}

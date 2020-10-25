@@ -1,9 +1,0 @@
-package demo;
-
-import java.util.Date;
-
-public class Account {
-	Date birthday;
-	
-
-}

@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="bai_dau_tien.TypeQuestion"/>
-    <fullyQualifiedTypeName name="bai_dau_tien.GroupAccount"/>
-    <fullyQualifiedTypeName name="bai_dau_tien.Account"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.text.DateFormat"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="com.vti.exercise_4.Enuum_canbo"/>
-    <fullyQualifiedTypeName name="com.vti.exercise_4.Enum_canbo"/>
-    <fullyQualifiedTypeName name="com.vti.exercise_4.test_E4"/>
-    <fullyQualifiedTypeName name="Exercise_2.IStudent"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StackFrameInfo"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.utils.StringToStringTableVector"/>
@@ -36,7 +24,6 @@
     <fullyQualifiedTypeName name="backend.Exercise_1"/>
     <fullyQualifiedTypeName name="entity.MyMath_Exercise_1"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="Backend.Exercise_1"/>
     <fullyQualifiedTypeName name="Entity.StudentExercise3"/>
     <fullyQualifiedTypeName name="java.awt.desktop.PrintFilesEvent"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
@@ -45,8 +32,6 @@
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="Entity.ArrayListStudent"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.Process"/>
     <fullyQualifiedTypeName name="Backend.Exercise_3.CPU.Ram"/>
     <fullyQualifiedTypeName name="Backend.Exercise_3.CPU.Processor"/>
@@ -57,4 +42,22 @@
     <fullyQualifiedTypeName name="Entity.Phone"/>
     <fullyQualifiedTypeName name="Entity.Staff"/>
     <fullyQualifiedTypeName name="Backend.Exercsie_3"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="Backend.Exercise_1"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="Backend.DepartmentDao"/>
+    <fullyQualifiedTypeName name="Ultis.Properties.DatabaseProperties"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="Ultis.JDBCUtils"/>
+    <fullyQualifiedTypeName name="Backend.Transaction"/>
+    <fullyQualifiedTypeName name="com.vti.utils.JdbcUtils"/>
+    <fullyQualifiedTypeName name="com.vti.utils.properties.MessageProperties"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.vti.backend.entity.Account"/>
 </qualifiedTypeNameHistroy>

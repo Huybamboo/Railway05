@@ -1,0 +1,35 @@
+package JDBC;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class insert_value {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		// Step 1
+		
+		// Step 2
+		String url = "jdbc:mysql://localhost:3306/testing_system?autoReconnect=true&useSSL=false&characterEncoding=latin1";
+		String userName = "root" ;
+		String password = "root" ;
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		Connection connection = DriverManager.getConnection(url, userName, password );
+		
+		// Step 3
+		Statement statement = connection.createStatement();
+		String sql = " INSERT INTO position (`PositionName`) VALUE ('Lai xe 1') ";
+		
+		// Step 4
+		int rowAffectedAmount = statement.executeUpdate(sql);
+		
+		// Step 5	
+		System.out.println(rowAffectedAmount);
+			
+		// Step 6
+		connection.close();
+	}
+}

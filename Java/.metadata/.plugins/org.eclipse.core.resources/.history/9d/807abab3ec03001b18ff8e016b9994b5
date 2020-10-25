@@ -1,6 +1,0 @@
-package lesson_4;
-
-public class Department {
-	byte id;
-	String name;
-};
